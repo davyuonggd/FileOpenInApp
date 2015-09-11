@@ -14,6 +14,7 @@
 		5B5D1C8B1BA29B6700FBB600 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D1C891BA29B6700FBB600 /* LaunchScreen.storyboard */; };
 		5B5D1C961BA29B6800FBB600 /* FileOpenInAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D1C951BA29B6800FBB600 /* FileOpenInAppTests.swift */; };
 		5B5D1CA11BA29B6800FBB600 /* FileOpenInAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D1CA01BA29B6800FBB600 /* FileOpenInAppUITests.swift */; };
+		5B5D1CAF1BA29C4400FBB600 /* NotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D1CAE1BA29C4400FBB600 /* NotificationCenter.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5B5D1C9C1BA29B6800FBB600 /* FileOpenInAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileOpenInAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B5D1CA01BA29B6800FBB600 /* FileOpenInAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOpenInAppUITests.swift; sourceTree = "<group>"; };
 		5B5D1CA21BA29B6800FBB600 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5D1CAE1BA29C4400FBB600 /* NotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				5B5D1C801BA29B6700FBB600 /* AppDelegate.swift */,
+				5B5D1CAE1BA29C4400FBB600 /* NotificationCenter.swift */,
 				5B5D1C821BA29B6700FBB600 /* ViewController.swift */,
 				5B5D1C841BA29B6700FBB600 /* Main.storyboard */,
 				5B5D1C871BA29B6700FBB600 /* Assets.xcassets */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B5D1C831BA29B6700FBB600 /* ViewController.swift in Sources */,
+				5B5D1CAF1BA29C4400FBB600 /* NotificationCenter.swift in Sources */,
 				5B5D1C811BA29B6700FBB600 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FileOpenInApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DavyUong.FileOpenInApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FileOpenInApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DavyUong.FileOpenInApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

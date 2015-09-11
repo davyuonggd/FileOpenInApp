@@ -12,6 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        //put the NSURL from the source into a dictionary to put it into the userInfo of the notification
+        let dict = [urlInDictionary:url]
+        
+        //post up the notification
+        NSNotificationCenter.defaultCenter().postNotificationName(NotificationNameOpenInUrl, object: self, userInfo: dict)
+        
+        return true
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
