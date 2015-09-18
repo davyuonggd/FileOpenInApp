@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "handleOpenInUrlFromNotification:", name: NotificationNameOpenInUrl, object: nil)
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
     //This func will load the file in the NSURL of the notification.userInfo into the UIWebView
     func handleOpenInUrlFromNotification(notification: NSNotification) {
         if let info = notification.userInfo as? Dictionary<String,NSURL> {
